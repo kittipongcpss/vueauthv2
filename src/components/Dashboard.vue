@@ -1,6 +1,10 @@
 <template>
     <div class="dashboard">
-        GG
+        <div>
+            <h1>Firebase FireStore with Vue</h1>
+            <router-link to="/register">Register</router-link> |
+           
+        </div>
     </div>
 </template>
 

@@ -1,9 +1,10 @@
 
 import { initializeApp } from "firebase/app";
-// import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import { getFirestore, getDoc,docc ,updateDo,deleteDoc,setDoc} from 'firebase/firestore/lite';
 import { getAuth } from "firebase/auth";
+
 const firebaseConfig = {
-    apiKey: "AIzaSyDgfEZ-EwkaDuURelY7K32o1d2LIhbvBs8",
+  apiKey: "AIzaSyDgfEZ-EwkaDuURelY7K32o1d2LIhbvBs8",
   authDomain: "iotcom-dbc7b.firebaseapp.com",
   databaseURL: "https://iotcom-dbc7b-default-rtdb.firebaseio.com",
   projectId: "iotcom-dbc7b",
@@ -15,8 +16,8 @@ const firebaseConfig = {
 
 
   const firebase = initializeApp(firebaseConfig);
-//   export const db = getFirestore(firebase);
-   export const auth = getAuth(firebase);
+  const firestore = getFirestore(firebase);
+  const auth = getAuth(firebase);
+  export { auth, firestore };
 
-// Firebase.initializeApp(firebaseConfig);
   
